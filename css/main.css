@@ -334,7 +334,7 @@ body {
 .main {
   text-align: center; }
 
-.information {
+.information, .result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
