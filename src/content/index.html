@@ -22,24 +22,47 @@
         <tbody class="table__item">
           <tr class="table__item-row">
             <td class="item">Total bill</td>
-            <td class="item"><input class="item-bill item-bill--js" type="text" name="billAmount" value="55"></td>
+            <td class="item"><input class="item-bill item-bill--js" type="text" onfocus="this.value=''" name="billAmount" value="55"></td>
           </tr>
           <tr class="table__item-row">
             <td class="item">Tip %</td>
-            <td class="item"><input class="item-percent item-percent--js" type="text" name="tipPercent" value="15">
+            <td class="item"><input class="item-percent item-percent--js" type="text" onfocus="this.value=''" name="tipPercent" value="15">
             </td>
           </tr>
           <tr class="table__item-row">
             <td class="item">How many people to share</td>
-            <td class="item"><input class="item-ppl item-ppl--js" type="text" name="numberOfPpl" value="1"></td>
+            <td class="item"><input class="item-ppl item-ppl--js" type="text" onfocus="this.value=''" name="numberOfPpl" value="1"></td>
           </tr>
         </tbody>
       </table>
     </section>
     <div class="controls">
-        <button class="button__calculate button__calculate--js">Calculate</button>
-        <button class="button__clear button__clear--js">Clear</button>
-      </div>
+      <button type="button" class="button__calculate button__calculate--js" >Calculate</button>
+      <button type="button" class="button__clear button__clear--js" >Clear</button>
+    </div>
+    <section class="result result--js">
+      <table class="table">
+        <tbody class="table__item">
+          <tr class="table__item-row">
+            <td class="item">Tip Total:</td>
+            <td class="item item__total-tip--js"></td>
+          </tr>
+          <tr class="table__item-row">
+            <td class="item">Tip Each Person:</td>
+            <td class="item item__tip-person--js"></td>
+            </td>
+          </tr>
+          <tr class="table__item-row">
+            <td class="item">Total (Bill + Tip):</td>
+            <td class="item item__tip-total--js"></td>
+          </tr>
+          <tr class="table__item-row">
+            <td class="item">Total Each Person:</td>
+            <td class="item item__total-person--js"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
   <script src="js/main.js"></script>
 </body>

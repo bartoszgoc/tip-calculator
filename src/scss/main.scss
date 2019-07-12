@@ -32,7 +32,7 @@ body {
   text-align: center;
 }
 
-.information {
+.information, .result {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -50,4 +50,8 @@ body {
     margin: 16px;
     padding: 16px;
   }
+}
+
+.result {
+  display: none;
 }
